@@ -3,10 +3,12 @@ package com.example.crud;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.sql.Connection;
@@ -18,6 +20,9 @@ import java.util.ResourceBundle;
 @SuppressWarnings("ALL")
 public class MainController implements Initializable {
     Alert alert = new Alert(Alert.AlertType.INFORMATION);
+
+    @FXML
+    private Button clear_butt;
 
     @FXML
     private Label account_name;
@@ -341,5 +346,18 @@ public class MainController implements Initializable {
 
         student_table.setItems(sortedData);
         student_table.refresh();
+    }
+
+    @FXML
+    void clear(ActionEvent e){
+        clear_butt.addEventHandler(MouseEvent.MOUSE_CLICKED, EVENT ->{
+            maxNext();
+            search_user();
+            add_name.clear();
+            add_course.clear();
+            add_dept.clear();
+            add_suite.clear();
+            search_bar.clear();
+        });
     }
 }
