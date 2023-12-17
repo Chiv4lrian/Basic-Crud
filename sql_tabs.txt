@@ -1,3 +1,6 @@
+CREATE DATABASE crudy;
+USE crudy;
+
 CREATE TABLE account (
     id INT PRIMARY KEY,
     U_code INT UNIQUE NOT NULL,
