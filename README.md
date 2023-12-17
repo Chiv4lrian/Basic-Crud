@@ -1,6 +1,6 @@
 # Student Information Manager with JavaFX
 
-Hey there! Welcome to my GitHub repository. In this project, I've crafted a simple yet powerful CRUD (Create, Read, Update, Delete) application using Java with JavaFX. 
+Hey there! Welcome to my GitHub repository. In this project, I've crafted a simple CRUD (For my Info Management Class) application using Java with JavaFX. 
 It's tailored for managing student information, offering features like user authentication, data entry, and a nifty table view to make everything clear.
 
 ## What's Inside?
