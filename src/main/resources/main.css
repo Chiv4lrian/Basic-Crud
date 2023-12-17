@@ -9,20 +9,28 @@
 
 .table-view .column-header {
     -fx-font-family: "Arial";
+    -fx-font-weight: bold;
     -fx-alignment: CENTER;
 }
 
-.table-view .table-row-cell {
-    -fx-background-color: #ae8be0;
-    -fx-alignment: CENTER;
+.table-row-cell:empty{
+    -fx-background-color: #e8d5a4;
 }
 
-.table-view .table-row-cell:odd {
-    -fx-background-color: #738ee3;
+.table-row-cell:empty .table-cell{
+    -fx-border-width: 0px;
+}
+
+.table-row-cell:odd:filled{
+    -fx-background-color: #8aaddb;
+}
+
+.table-row-cell:even:filled{
+    -fx-background-color: #addb8b;
 }
 
 .table-view .table-row-cell:selected {
-    -fx-background-color: #c69090;
+    -fx-background-color: #c94b4b;
 }
 
 .table-view .table-row-cell:hover {
